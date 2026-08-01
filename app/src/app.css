@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink-950: #0b0f14;
+  --color-ink-900: #10161e;
+  --color-ink-850: #151d27;
+  --color-ink-800: #1b2530;
+  --color-ink-700: #273443;
+  --color-ink-600: #3a4b5e;
+  --color-ink-400: #7c92a8;
+  --color-ink-300: #a7bacb;
+  --color-ink-200: #cdd9e5;
+
+  --color-accent-400: #4bd6c4;
+  --color-accent-500: #23bda9;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+body {
+  margin: 0;
+}

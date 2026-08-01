@@ -1,0 +1,658 @@
+[
+ {
+  "url": "https://gulfislandsdriftwood.com/neighbours-douse-grass-fire/",
+  "source": {
+   "url": "https://gulfislandsdriftwood.com/neighbours-douse-grass-fire/",
+   "title": "Neighbours douse grass fire - Salt Spring Island news",
+   "date": "2026-07-29T06:10:00-07:00"
+  },
+  "entities": [
+   {
+    "name": "Bruce Cameron",
+    "prototype": "Person",
+    "description": "Co‑owner of the property where the fire started.",
+    "location": "Salt Spring Island",
+    "quote": "Our neighbours are our heroes,\" said Susan Lundy, who, with her husband Bruce Cameron, owns the property where the fire started."
+   },
+   {
+    "name": "Susan Lundy",
+    "prototype": "Person",
+    "description": "Co‑owner of the property where the fire started and praised the neighbours.",
+    "location": "Salt Spring Island",
+    "quote": "Our neighbours are our heroes,\" said Susan Lundy, who, with her husband Bruce Cameron, owns the property where the fire started."
+   },
+   {
+    "name": "Dave McColl",
+    "prototype": "Person",
+    "description": "Neighbourhood resident who grabbed a fire extinguisher and helped fight the fire.",
+    "location": "Salt Spring Island",
+    "quote": "\"I jumped up and grabbed the fire extinguisher out of the closet, got shoes on and ran down our driveway,\" said neighbourhood resident Dave McColl."
+   },
+   {
+    "name": "Jen",
+    "prototype": "Person",
+    "description": "Partner of Dave McColl who brought a garden hose to soak the fire.",
+    "location": "Salt Spring Island",
+    "quote": "\"...and then Jen brought the hose down from the garden and we started soaking everything.\""
+   },
+   {
+    "name": "BC Hydro",
+    "prototype": "Business",
+    "description": "Utility company that experienced a brief island‑wide power outage and sent crews to the scene.",
+    "location": "British Columbia",
+    "quote": "BC Hydro said the single event set off a widespread — if, for most customers, brief — loss of power, affecting more than 950 customers across the island."
+   },
+   {
+    "name": "Salt Spring Island Fire Rescue",
+    "prototype": "Organization",
+    "description": "Agency that lowered the local fire‑hazard level to low.",
+    "location": "Salt Spring Island",
+    "quote": "At press time Monday, July 27, rain and cooling temperatures had allowed Salt Spring Island Fire Rescue to reduce their local fire hazard level to \"low\"."
+   },
+   {
+    "name": "Cusheon Lake Road",
+    "prototype": "Road",
+    "description": "The 600 block where the fire ignited.",
+    "location": "Salt Spring Island",
+    "quote": "It took just moments for the fire to start after wind caused a large limb to fall and hit power lines just before 11 a.m. Thursday, July 23 in the 600 block of Cusheon Lake Road."
+   },
+   {
+    "name": "Cusheon Lake neighbourhood",
+    "prototype": "Place",
+    "description": "Residential area where power was restored after the outage.",
+    "location": "Salt Spring Island",
+    "quote": "full service was restored for everyone — including the Cusheon Lake neighbourhood — just after noon"
+   },
+   {
+    "name": "Salt Spring Island",
+    "prototype": "Place",
+    "description": "Island in British Columbia where the incident occurred.",
+    "location": "British Columbia",
+    "quote": "Quick hose work by neighbours kept a fire on Salt Spring from spreading..."
+   },
+   {
+    "name": "Grass fire",
+    "prototype": "Event",
+    "description": "Fire that started when a tree limb hit power lines, burning dry grass.",
+    "location": "Near Cusheon Lake Road, Salt Spring Island",
+    "quote": "It took just moments for the fire to start after wind caused a large limb to fall and hit power lines..."
+   },
+   {
+    "name": "Tree limb",
+    "prototype": "Natural feature",
+    "description": "Large branch that fell onto power lines, triggering the fire.",
+    "location": "Salt Spring Island",
+    "quote": "wind caused a large limb to fall and hit power lines"
+   },
+   {
+    "name": "Power lines",
+    "prototype": "Infrastructure",
+    "description": "Electrical lines hit by the tree limb, causing sparks that ignited the fire.",
+    "location": "Salt Spring Island",
+    "quote": "large limb to fall and hit power lines"
+   },
+   {
+    "name": "Fire extinguisher",
+    "prototype": "Tool",
+    "description": "Device Dave McColl grabbed to fight the fire.",
+    "location": "Salt Spring Island",
+    "quote": "\"I jumped up and grabbed the fire extinguisher out of the closet..."
+   },
+   {
+    "name": "Hose",
+    "prototype": "Tool",
+    "description": "Garden hose used by Jen to soak the fire.",
+    "location": "Salt Spring Island",
+    "quote": "\"...and then Jen brought the hose down from the garden and we started soaking everything.\""
+   },
+   {
+    "name": "911 dispatchers",
+    "prototype": "Government body",
+    "description": "Emergency operators contacted by a passerby.",
+    "location": "Salt Spring Island",
+    "quote": "Fortunately a passerby was able to get a signal and reached 911 dispatchers."
+   },
+   {
+    "name": "Passerby",
+    "prototype": "Person",
+    "description": "Individual who obtained a signal and called 911.",
+    "location": "Salt Spring Island",
+    "quote": "Fortunately a passerby was able to get a signal and reached 911 dispatchers."
+   },
+   {
+    "name": "Salt Spring firefighters",
+    "prototype": "Organization",
+    "description": "Local fire responders who arrived about 15 minutes after the fire started.",
+    "location": "Salt Spring Island",
+    "quote": "When Salt Spring firefighters arrived about 15 minutes later, the fire was pretty much out."
+   },
+   {
+    "name": "Low fire hazard level",
+    "prototype": "Condition",
+    "description": "The fire‑hazard status declared by Salt Spring Island Fire Rescue.",
+    "location": null,
+    "quote": "allowed Salt Spring Island Fire Rescue to reduce their local fire hazard level to \"low\"."
+   }
+  ],
+  "relations": [
+   {
+    "from": "Bruce Cameron",
+    "predicate": "co‑owns property with",
+    "to": "Susan Lundy",
+    "quote": "Our neighbours are our heroes,\" said Susan Lundy, who, with her husband Bruce Cameron, owns the property where the fire started."
+   },
+   {
+    "from": "Dave McColl",
+    "predicate": "used",
+    "to": "Fire extinguisher",
+    "quote": "\"I jumped up and grabbed the fire extinguisher out of the closet, got shoes on and ran down our driveway,\" said neighbourhood resident Dave McColl."
+   },
+   {
+    "from": "Jen",
+    "predicate": "brought",
+    "to": "Hose",
+    "quote": "\"...and then Jen brought the hose down from the garden and we started soaking everything.\""
+   },
+   {
+    "from": "Tree limb",
+    "predicate": "fell on",
+    "to": "Power lines",
+    "quote": "wind caused a large limb to fall and hit power lines"
+   },
+   {
+    "from": "Power lines",
+    "predicate": "sparked",
+    "to": "Grass fire",
+    "quote": "large limb to fall and hit power lines ... the fire to start"
+   },
+   {
+    "from": "Grass fire",
+    "predicate": "located on",
+    "to": "Cusheon Lake Road",
+    "quote": "the fire ... in the 600 block of Cusheon Lake Road"
+   },
+   {
+    "from": "Salt Spring firefighters",
+    "predicate": "arrived at",
+    "to": "Grass fire",
+    "quote": "When Salt Spring firefighters arrived about 15 minutes later, the fire was pretty much out."
+   },
+   {
+    "from": "Salt Spring firefighters",
+    "predicate": "kept people back until",
+    "to": "BC Hydro",
+    "quote": "firefighters kept people back from the scene until BC Hydro crews arrived"
+   },
+   {
+    "from": "BC Hydro",
+    "predicate": "caused power outage affecting",
+    "to": "Cusheon Lake neighbourhood",
+    "quote": "full service was restored for everyone — including the Cusheon Lake neighbourhood — just after noon"
+   },
+   {
+    "from": "Passerby",
+    "predicate": "contacted",
+    "to": "911 dispatchers",
+    "quote": "Fortunately a passerby was able to get a signal and reached 911 dispatchers."
+   },
+   {
+    "from": "Salt Spring Island Fire Rescue",
+    "predicate": "reduced fire hazard level to",
+    "to": "Low fire hazard level",
+    "quote": "allowed Salt Spring Island Fire Rescue to reduce their local fire hazard level to \"low\"."
+   },
+   {
+    "from": "Jen",
+    "predicate": "doused",
+    "to": "Grass fire",
+    "quote": "\"...and then Jen brought the hose down from the garden and we started soaking everything.\""
+   },
+   {
+    "from": "Dave McColl",
+    "predicate": "doused",
+    "to": "Grass fire",
+    "quote": "\"I jumped up and grabbed the fire extinguisher out of the closet...\""
+   },
+   {
+    "from": "BC Hydro",
+    "predicate": "sent crews to",
+    "to": "Grass fire",
+    "quote": "firefighters kept people back from the scene until BC Hydro crews arrived"
+   }
+  ],
+  "ms": 263273
+ },
+ {
+  "url": "https://gulfislandsdriftwood.com/fire-trustees-surprised-by-fulford-pickleball-project/",
+  "source": {
+   "url": "https://gulfislandsdriftwood.com/fire-trustees-surprised-by-fulford-pickleball-project/",
+   "title": "Fire trustees surprised by Fulford pickleball project - Salt Spring Island news",
+   "date": "2026-07-29T06:00:00-07:00"
+  },
+  "entities": [
+   {
+    "name": "Dan Ovington",
+    "prototype": "Person",
+    "description": "Senior Capital Regional District manager who quipped about island park planning.",
+    "location": null,
+    "quote": "Two summers ago, Salt Spring’s senior CRD manager Dan Ovington quipped that island park planning was a bit like “being given a four-seater car and then asked to put six people in it”."
+   },
+   {
+    "name": "Local Community Commission",
+    "prototype": "Organization",
+    "description": "Local governing body that approved the pickleball project charter.",
+    "location": null,
+    "quote": "Local Community Commission’s (LCC) unanimous motion last month approving a project charter that envisions as many as eight new courts in the bucolic Burgoyne Valley near Fulford."
+   },
+   {
+    "name": "Fulford Pickleball Court Project",
+    "prototype": "Project",
+    "description": "Proposed development of up to eight new pickleball courts near Fulford.",
+    "location": null,
+    "quote": "the LCC had advanced the Fulford Pickleball Court Project on district-owned land adjacent to Fire Hall No. 2"
+   },
+   {
+    "name": "Burgoyne Valley",
+    "prototype": "Place",
+    "description": "Bucolic valley on Salt Spring Island where the courts are planned.",
+    "location": "Burgoyne Valley",
+    "quote": "in the bucolic Burgoyne Valley near Fulford."
+   },
+   {
+    "name": "Fulford",
+    "prototype": "Place",
+    "description": "Area on Salt Spring Island adjacent to the proposed courts.",
+    "location": "Fulford",
+    "quote": "in the bucolic Burgoyne Valley near Fulford."
+   },
+   {
+    "name": "Salt Spring Island Fire Protection District",
+    "prototype": "Organization",
+    "description": "Fire protection district whose trustees were surprised by the pickleball project.",
+    "location": null,
+    "quote": "trustees for the Salt Spring Island Fire Protection District (SSIFPD) seemed mostly surprised that the LCC had advanced the Fulford Pickleball Court Project"
+   },
+   {
+    "name": "Fire Hall No. 2",
+    "prototype": "Building",
+    "description": "Fire hall on district‑owned land adjacent to the proposed pickleball site.",
+    "location": "Fulford",
+    "quote": "on district-owned land adjacent to Fire Hall No. 2"
+   },
+   {
+    "name": "Rollie Cook",
+    "prototype": "Person",
+    "description": "Board chair of the SSIFPD who fielded calls from nearby landowners.",
+    "location": null,
+    "quote": "SSIFPD board chair Rollie Cook said he had fielded phone calls from nearby landowners who were “not happy” about existing pickleball play at the site"
+   },
+   {
+    "name": "Jamie Holmes",
+    "prototype": "Person",
+    "description": "Fire Chief who said housing and pickleball courts would be incompatible.",
+    "location": null,
+    "quote": "Fire Chief Jamie Holmes indicated the two uses would likely be incompatible"
+   },
+   {
+    "name": "Brad Hefferon",
+    "prototype": "Person",
+    "description": "Adjacent property owner who wrote a letter to the Driftwood criticizing the proposal.",
+    "location": null,
+    "quote": "Immediately-adjacent property owner Brad Hefferon, in a July 15 letter to the Driftwood, lamented learning of the proposal from the newspaper rather than from staff or members of the LCC themselves"
+   },
+   {
+    "name": "Driftwood",
+    "prototype": "Business",
+    "description": "Local newspaper that received Brad Hefferon’s letter.",
+    "location": null,
+    "quote": "in a July 15 letter to the Driftwood"
+   },
+   {
+    "name": "Robin Williams",
+    "prototype": "Person",
+    "description": "SSIFPD board member who said he was shocked by the project.",
+    "location": null,
+    "quote": "“I was really quite shocked,” said SSIFPD board member Robin Williams Monday night"
+   },
+   {
+    "name": "Rodney Dieleman",
+    "prototype": "Person",
+    "description": "Chief administrative officer who suggested the LCC was trying to gauge public opinion.",
+    "location": null,
+    "quote": "chief administrative officer Rodney Dieleman suggested the LCC might’ve been trying to “feel the public out"
+   },
+   {
+    "name": "Gary Holman",
+    "prototype": "Person",
+    "description": "CRD director who noted that public engagement on the project was still forthcoming.",
+    "location": null,
+    "quote": "Salt Spring Capital Regional District director Gary Holman noted in a Facebook post that public engagement on the Fulford Pickleball Court Project was still forthcoming"
+   },
+   {
+    "name": "Islands Trust",
+    "prototype": "Organization",
+    "description": "Regional trust that must approve rezoning for the project.",
+    "location": null,
+    "quote": "and a rezoning process through the Islands Trust"
+   },
+   {
+    "name": "Rainbow Road Recreation Area Master Plan",
+    "prototype": "Document",
+    "description": "Master plan that would need an amendment to accommodate the new courts.",
+    "location": null,
+    "quote": "would require an amendment to the Rainbow Road Recreation Area Master Plan"
+   },
+   {
+    "name": "Rainbow Road",
+    "prototype": "Road",
+    "description": "Road where a synthetic ice rink is being planned.",
+    "location": "Rainbow Road",
+    "quote": "LCC is advancing plans to situate a recently-donated synthetic ice rink at Rainbow Road."
+   },
+   {
+    "name": "Synthetic ice rink",
+    "prototype": "Facility",
+    "description": "Donated ice rink that LCC plans to place at Rainbow Road.",
+    "location": "Rainbow Road",
+    "quote": "LCC is advancing plans to situate a recently-donated synthetic ice rink at Rainbow Road."
+   },
+   {
+    "name": "Portlock Park",
+    "prototype": "Place",
+    "description": "Former site from which pickleball was conceptually shifted to Rainbow Road.",
+    "location": "Portlock Park",
+    "quote": "conceptually shifted pickleball from Portlock Park to Rainbow Road."
+   },
+   {
+    "name": "Agricultural Land Reserve",
+    "prototype": "Policy",
+    "description": "Land designation that the proposed site falls within, requiring a non‑farm use application.",
+    "location": null,
+    "quote": "as the proposed site lies within the Agricultural Land Reserve"
+   }
+  ],
+  "relations": [
+   {
+    "from": "Local Community Commission",
+    "predicate": "approved",
+    "to": "Fulford Pickleball Court Project",
+    "quote": "Local Community Commission’s (LCC) unanimous motion last month approving a project charter that envisions as many as eight new courts in the bucolic Burgoyne Valley near Fulford."
+   },
+   {
+    "from": "Fulford Pickleball Court Project",
+    "predicate": "located in",
+    "to": "Burgoyne Valley",
+    "quote": "in the bucolic Burgoyne Valley near Fulford."
+   },
+   {
+    "from": "Fulford Pickleball Court Project",
+    "predicate": "adjacent to",
+    "to": "Fire Hall No. 2",
+    "quote": "the LCC had advanced the Fulford Pickleball Court Project on district-owned land adjacent to Fire Hall No. 2"
+   },
+   {
+    "from": "Salt Spring Island Fire Protection District",
+    "predicate": "surprised by",
+    "to": "Fulford Pickleball Court Project",
+    "quote": "trustees for the Salt Spring Island Fire Protection District (SSIFPD) seemed mostly surprised that the LCC had advanced the Fulford Pickleball Court Project"
+   },
+   {
+    "from": "Brad Hefferon",
+    "predicate": "wrote",
+    "to": "Driftwood",
+    "quote": "Brad Hefferon, in a July 15 letter to the Driftwood, lamented learning of the proposal from the newspaper rather than from staff or members of the LCC themselves"
+   },
+   {
+    "from": "Jamie Holmes",
+    "predicate": "stated",
+    "to": "incompatibility between housing and pickleball",
+    "quote": "Fire Chief Jamie Holmes indicated the two uses would likely be incompatible"
+   },
+   {
+    "from": "Rodney Dieleman",
+    "predicate": "suggested",
+    "to": "LCC trying to feel the public out",
+    "quote": "chief administrative officer Rodney Dieleman suggested the LCC might’ve been trying to “feel the public out"
+   },
+   {
+    "from": "Gary Holman",
+    "predicate": "noted",
+    "to": "public engagement forthcoming",
+    "quote": "Salt Spring Capital Regional District director Gary Holman noted in a Facebook post that public engagement on the Fulford Pickleball Court Project was still forthcoming"
+   },
+   {
+    "from": "Fulford Pickleball Court Project",
+    "predicate": "requires amendment to",
+    "to": "Rainbow Road Recreation Area Master Plan",
+    "quote": "would require an amendment to the Rainbow Road Recreation Area Master Plan"
+   },
+   {
+    "from": "Local Community Commission",
+    "predicate": "must go through rezoning process through",
+    "to": "Islands Trust",
+    "quote": "and a rezoning process through the Islands Trust"
+   },
+   {
+    "from": "Local Community Commission",
+    "predicate": "advancing",
+    "to": "Synthetic ice rink",
+    "quote": "LCC is advancing plans to situate a recently-donated synthetic ice rink at Rainbow Road."
+   },
+   {
+    "from": "Synthetic ice rink",
+    "predicate": "planned for",
+    "to": "Rainbow Road",
+    "quote": "LCC is advancing plans to situate a recently-donated synthetic ice rink at Rainbow Road."
+   },
+   {
+    "from": "Rainbow Road Recreation Area Master Plan",
+    "predicate": "shifted pickleball from",
+    "to": "Portlock Park",
+    "quote": "conceptually shifted pickleball from Portlock Park to Rainbow Road."
+   },
+   {
+    "from": "Robin Williams",
+    "predicate": "expressed",
+    "to": "shock about project",
+    "quote": "“I was really quite shocked,” said SSIFPD board member Robin Williams Monday night"
+   }
+  ],
+  "ms": 169334
+ },
+ {
+  "url": "https://gulfislandsdriftwood.com/long-awaited-road-repairs-underway/",
+  "source": {
+   "url": "https://gulfislandsdriftwood.com/long-awaited-road-repairs-underway/",
+   "title": "Long-awaited road repairs underway - Salt Spring Island news",
+   "date": "2026-07-28T16:29:59-07:00"
+  },
+  "entities": [
+   {
+    "name": "Broadwell Road",
+    "prototype": "Road",
+    "description": "A road on Salt Spring Island that has been closed to traffic since December 2025 for culvert repairs.",
+    "location": "Salt Spring Island",
+    "quote": "Broadwell Road has been closed to traffic since December 2025, after a routine inspection discovered debris hung up in the culvert..."
+   },
+   {
+    "name": "Sunset Drive",
+    "prototype": "Road",
+    "description": "A road on Salt Spring Island that has been operating as a single‑lane “take turns” route after a culvert failure.",
+    "location": "Salt Spring Island",
+    "quote": "Sunset Drive has been a “take turns” single lane since that culvert failure."
+   },
+   {
+    "name": "Blackburn Road",
+    "prototype": "Road",
+    "description": "A road on Salt Spring Island where crews are replacing an oversized culvert near Sunrise Place.",
+    "location": "Salt Spring Island",
+    "quote": "Emcon Services’ South Island operations manager Andrew Gaetz confirmed on July 22 that crews had already begun work at Blackburn Road near Sunrise Place..."
+   },
+   {
+    "name": "Duck Creek",
+    "prototype": "Natural feature",
+    "description": "A fish‑bearing creek on Salt Spring Island where fish exclusion dams were installed for the road works.",
+    "location": "Salt Spring Island",
+    "quote": "Fish exclusion dams were installed in Duck Creek on both sides of Broadwell Road on Thursday..."
+   },
+   {
+    "name": "Duck Creek Park",
+    "prototype": "Place",
+    "description": "A park adjacent to Sunset Drive where concrete barriers were placed around a washed‑out section of the road.",
+    "location": "Salt Spring Island",
+    "quote": "Concrete barriers route traffic around the washed-out side of Sunset Drive at its lowest point next to Duck Creek Park."
+   },
+   {
+    "name": "North Salt Spring Waterworks District",
+    "prototype": "Organization",
+    "description": "The local water utility that completed valve installation on the critical water line on Broadwell Road.",
+    "location": null,
+    "quote": "The North Salt Spring Waterworks District were completing that work, which finished Friday."
+   },
+   {
+    "name": "Ministry of Transportation and Transit",
+    "prototype": "Government body",
+    "description": "British Columbia’s provincial ministry overseeing the road repair projects on Salt Spring Island.",
+    "location": null,
+    "quote": "Ministry of Transportation and Transit roads area manager Owen Page said a critical water line on Broadwell Road needed new valves installed..."
+   },
+   {
+    "name": "Owen Page",
+    "prototype": "Person",
+    "description": "Roads area manager for the Ministry of Transportation and Transit who provided updates on the repair schedule.",
+    "location": null,
+    "quote": "Ministry of Transportation and Transit roads area manager Owen Page said a critical water line on Broadwell Road needed new valves installed..."
+   },
+   {
+    "name": "Andrew Gaetz",
+    "prototype": "Person",
+    "description": "South Island operations manager for Emcon Services who confirmed work had begun on Blackburn Road.",
+    "location": null,
+    "quote": "Emcon Services’ South Island operations manager Andrew Gaetz confirmed on July 22 that crews had already begun work at Blackburn Road near Sunrise Place..."
+   },
+   {
+    "name": "Emcon Services",
+    "prototype": "Business",
+    "description": "The construction contractor performing the culvert replacement on Blackburn Road.",
+    "location": null,
+    "quote": "Emcon Services’ South Island operations manager Andrew Gaetz confirmed on July 22 that crews had already begun work at Blackburn Road near Sunrise Place..."
+   },
+   {
+    "name": "Sunrise Place",
+    "prototype": "Place",
+    "description": "A residential area on Salt Spring Island accessed via Blackburn Road and, during the closure, via Cranberry Road.",
+    "location": "Salt Spring Island",
+    "quote": "crews had already begun work at Blackburn Road near Sunrise Place..."
+   },
+   {
+    "name": "Cranberry Road",
+    "prototype": "Road",
+    "description": "A road on Salt Spring Island that served as an alternate route to Sunrise Place while Blackburn Road was closed.",
+    "location": "Salt Spring Island",
+    "quote": "sent anyone headed to Sunrise Place the “long way around” — i.e., via Cranberry Road."
+   },
+   {
+    "name": "Broadwell and Channel Ridge communities",
+    "prototype": "Community",
+    "description": "Neighbourhoods on Salt Spring Island affected by the closure of Broadwell Road.",
+    "location": "Salt Spring Island",
+    "quote": "closure of Broadwell Road has caused for some residents of the Broadwell and Channel Ridge communities"
+   },
+   {
+    "name": "critical water line on Broadwell Road",
+    "prototype": "Infrastructure",
+    "description": "A water main on Broadwell Road that required new valves before road work could continue.",
+    "location": "Broadwell Road",
+    "quote": "a critical water line on Broadwell Road needed new valves installed before the project could proceed"
+   },
+   {
+    "name": "Fish exclusion dams",
+    "prototype": "Structure",
+    "description": "Temporary dams installed in Duck Creek to protect fish during in‑stream construction.",
+    "location": "Duck Creek",
+    "quote": "Fish exclusion dams were installed in Duck Creek on both sides of Broadwell Road on Thursday..."
+   }
+  ],
+  "relations": [
+   {
+    "from": "Owen Page",
+    "predicate": "identified need for",
+    "to": "critical water line on Broadwell Road",
+    "quote": "Owen Page said a critical water line on Broadwell Road needed new valves installed before the project could proceed"
+   },
+   {
+    "from": "North Salt Spring Waterworks District",
+    "predicate": "completed",
+    "to": "critical water line on Broadwell Road",
+    "quote": "The North Salt Spring Waterworks District were completing that work, which finished Friday"
+   },
+   {
+    "from": "Fish exclusion dams",
+    "predicate": "installed in",
+    "to": "Duck Creek",
+    "quote": "Fish exclusion dams were installed in Duck Creek on both sides of Broadwell Road on Thursday"
+   },
+   {
+    "from": "Broadwell Road",
+    "predicate": "closed to",
+    "to": "traffic",
+    "quote": "Broadwell Road has been closed to traffic since December 2025, after a routine inspection discovered debris hung up in the culvert"
+   },
+   {
+    "from": "Broadwell Road",
+    "predicate": "serves as detour for",
+    "to": "Sunset Drive",
+    "quote": "the by-then-reopened Broadwell Road will serve as the designated construction detour route"
+   },
+   {
+    "from": "Owen Page",
+    "predicate": "announced crews will move to",
+    "to": "Sunset Drive",
+    "quote": "As soon as the Broadwell Road crossing is completed, Page said, crews will move immediately to Sunset Drive"
+   },
+   {
+    "from": "Andrew Gaetz",
+    "predicate": "confirmed work on",
+    "to": "Blackburn Road",
+    "quote": "Andrew Gaetz confirmed ... crews had already begun work at Blackburn Road near Sunrise Place"
+   },
+   {
+    "from": "Emcon Services",
+    "predicate": "performed culvert replacement on",
+    "to": "Blackburn Road",
+    "quote": "crews are replacing that large pipe with an even larger one ... on Blackburn Road"
+   },
+   {
+    "from": "Blackburn Road",
+    "predicate": "closure ended after",
+    "to": "culvert replacement",
+    "quote": "Completion of that repair ends a closure that had sent anyone headed to Sunrise Place the “long way around”"
+   },
+   {
+    "from": "Broadwell Road",
+    "predicate": "affected",
+    "to": "Broadwell and Channel Ridge communities",
+    "quote": "closure of Broadwell Road has caused for some residents of the Broadwell and Channel Ridge communities"
+   },
+   {
+    "from": "Sunrise Place",
+    "predicate": "accessed via",
+    "to": "Cranberry Road",
+    "quote": "sent anyone headed to Sunrise Place the “long way around” — i.e., via Cranberry Road"
+   },
+   {
+    "from": "Sunset Drive",
+    "predicate": "crosses",
+    "to": "Duck Creek",
+    "quote": "crews will move immediately to Sunset Drive, to tackle a similar culvert replacement at that road’s Duck Creek crossing"
+   },
+   {
+    "from": "Broadwell Road",
+    "predicate": "adjacent to",
+    "to": "Duck Creek",
+    "quote": "Fish exclusion dams were installed in Duck Creek on both sides of Broadwell Road"
+   }
+  ],
+  "ms": 171688
+ }
+]

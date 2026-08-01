@@ -1,0 +1,14 @@
+{
+  "name": "ontology-extractor",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "extract": "node run.js",
+    "watch": "node run.js --watch 30"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0",
+    "mongodb": "^6.16.0"
+  }
+}

@@ -1,0 +1,203 @@
+[
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/day-in-the-life-of-salt-spring-island-at-the-lady-minto-thrift-shop/", "title": "Day in the Life of Salt Spring Island: At the Lady Minto Thrift Shop", "date": "2026-07-29" },
+    "entities": [
+      { "name": "Lady Minto Thrift Shop", "prototype": "Business", "description": "A charity thrift shop on Salt Spring whose proceeds benefit Gulf Islands health care.", "location": "Lady Minto Thrift Shop", "quote": "all proceeds benefitting health care on Salt Spring and the other Gulf Islands." },
+      { "name": "Lady Minto Hospital Auxiliary Society", "prototype": "Organization", "description": "Volunteer society that runs the thrift shop in support of Lady Minto Hospital.", "location": null, "quote": "Longtime Lady Minto Hospital Auxiliary Society volunteer Kay Woodhouse" },
+      { "name": "Kay Woodhouse", "prototype": "Person", "description": "Longtime auxiliary volunteer who photographs the thrift shop each year.", "location": null, "quote": "Longtime Lady Minto Hospital Auxiliary Society volunteer Kay Woodhouse always captures at least one photo" },
+      { "name": "Gulf Islands Driftwood", "prototype": "Business", "description": "The Salt Spring Island newspaper.", "location": null, "quote": "published in the July 29 issue of the Driftwood newspaper." },
+      { "name": "Day in the Life of Salt Spring Island", "prototype": "Event", "description": "The Driftwood's annual island-wide photo shoot.", "location": null, "quote": "the Driftwood's annual Day in the Life of Salt Spring Island photo shoot." },
+      { "name": "Salt Spring Island", "prototype": "Place", "description": "A Southern Gulf Island in British Columbia.", "location": "Salt Spring Island", "quote": "health care on Salt Spring and the other Gulf Islands." }
+    ],
+    "relations": [
+      { "from": "Kay Woodhouse", "predicate": "volunteers for", "to": "Lady Minto Hospital Auxiliary Society", "quote": "Longtime Lady Minto Hospital Auxiliary Society volunteer Kay Woodhouse" },
+      { "from": "Lady Minto Hospital Auxiliary Society", "predicate": "runs", "to": "Lady Minto Thrift Shop", "quote": "her colleagues hard at work AND having fun at the shop" },
+      { "from": "Gulf Islands Driftwood", "predicate": "organizes", "to": "Day in the Life of Salt Spring Island", "quote": "the Driftwood's annual Day in the Life of Salt Spring Island photo shoot." },
+      { "from": "Lady Minto Thrift Shop", "predicate": "located on", "to": "Salt Spring Island", "quote": "all proceeds benefitting health care on Salt Spring" }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/day-in-the-life-of-salt-spring-island-world-cup-action/", "title": "Day in the Life of Salt Spring Island: World Cup Action", "date": "2026-07-29" },
+    "entities": [
+      { "name": "World Cup Round of 16", "prototype": "Event", "description": "The Canada vs Morocco World Cup match watched by island fans on July 4.", "location": null, "quote": "The World Cup Round of 16 game between Canada and Morocco" },
+      { "name": "Rob Lowrie", "prototype": "Person", "description": "Driftwood photographer who documented fans watching the match.", "location": null, "quote": "Driftwood photographer Rob Lowrie visited four different public gathering spots" },
+      { "name": "Moby's Pub", "prototype": "Business", "description": "A Ganges pub where fans gathered to watch the World Cup.", "location": "Moby's Pub", "quote": "Darby McIntyre takes names for seating in Moby's Pub" },
+      { "name": "Harbour House", "prototype": "Business", "description": "A Salt Spring venue where fans watched the match.", "location": "Harbour House", "quote": "Harbour House fans react as Canada presses." },
+      { "name": "Salt Spring Inn", "prototype": "Business", "description": "A Ganges inn and gathering spot for World Cup viewing.", "location": "Salt Spring Inn", "quote": "Salt Spring Inn fans Canada fixed on second half action" },
+      { "name": "The Local", "prototype": "Business", "description": "A Salt Spring pub packed for the match.", "location": "The Local", "quote": "Standing room only in The Local pub as Morocco leads." },
+      { "name": "Gulf Islands Driftwood", "prototype": "Business", "description": "The Salt Spring Island newspaper.", "location": null, "quote": "published in the July 29 issue of the Driftwood newspaper." },
+      { "name": "Day in the Life of Salt Spring Island", "prototype": "Event", "description": "The Driftwood's annual island-wide photo shoot.", "location": null, "quote": "the day of the Driftwood's Day in the Life of Salt Spring Island photo shoot." }
+    ],
+    "relations": [
+      { "from": "Rob Lowrie", "predicate": "photographs for", "to": "Gulf Islands Driftwood", "quote": "Driftwood photographer Rob Lowrie" },
+      { "from": "Rob Lowrie", "predicate": "documented", "to": "World Cup Round of 16", "quote": "to capture fans watching the game" },
+      { "from": "World Cup Round of 16", "predicate": "watched at", "to": "Moby's Pub", "quote": "fans to watch the World Cup Round of 16 match" }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/neighbours-douse-grass-fire/", "title": "Neighbours douse grass fire", "date": "2026-07-29" },
+    "entities": [
+      { "name": "Cusheon Lake Road grass fire", "prototype": "Event", "description": "A roadside grass fire started July 23 when a limb hit power lines during hot, dry, windy weather.", "location": "Cusheon Lake Road", "quote": "a fire on Salt Spring from spreading as dangerously hot, dry and windy conditions took hold" },
+      { "name": "Cusheon Lake Road", "prototype": "Road", "description": "The road where the fire ignited, in the 600 block.", "location": "Cusheon Lake Road", "quote": "in the 600 block of Cusheon Lake Road" },
+      { "name": "BC Hydro", "prototype": "Business", "description": "The electric utility whose downed wire started the fire and which restored power to 950+ customers.", "location": null, "quote": "BC Hydro said the single event set off a widespread ... loss of power, affecting more than 950 customers" },
+      { "name": "Salt Spring Island Fire Rescue", "prototype": "Government body", "description": "The island fire department that responded and later lowered the fire hazard level.", "location": null, "quote": "Salt Spring Island Fire Rescue to reduce their local fire hazard level to low" },
+      { "name": "Dave McColl", "prototype": "Person", "description": "A neighbourhood resident who helped douse the fire with an extinguisher and hose.", "location": null, "quote": "said neighbourhood resident Dave McColl" },
+      { "name": "Susan Lundy", "prototype": "Person", "description": "Co-owner of the property where the fire started.", "location": null, "quote": "said Susan Lundy, who, with her husband Bruce Cameron, owns the property" },
+      { "name": "Salt Spring Island", "prototype": "Place", "description": "A Southern Gulf Island in British Columbia.", "location": "Salt Spring Island", "quote": "a fire on Salt Spring" }
+    ],
+    "relations": [
+      { "from": "Cusheon Lake Road grass fire", "predicate": "occurred on", "to": "Cusheon Lake Road", "quote": "in the 600 block of Cusheon Lake Road" },
+      { "from": "BC Hydro", "predicate": "restored power after", "to": "Cusheon Lake Road grass fire", "quote": "full service was restored for everyone ... just after noon" },
+      { "from": "Dave McColl", "predicate": "helped extinguish", "to": "Cusheon Lake Road grass fire", "quote": "I hit it with the fire extinguisher" },
+      { "from": "Susan Lundy", "predicate": "owns property at", "to": "Cusheon Lake Road", "quote": "owns the property where the fire started" },
+      { "from": "Salt Spring Island Fire Rescue", "predicate": "responded to", "to": "Cusheon Lake Road grass fire", "quote": "when Salt Spring firefighters arrived about 15 minutes later" }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/viewpoint-care-for-nature-essential-in-campground-development/", "title": "Viewpoint: Care for nature essential in campground development", "date": "2026-07-29" },
+    "entities": [
+      { "name": "Fulford campground development", "prototype": "Project", "description": "A proposed 60-space drive-in campground on Tsawout ancestral land in Fulford.", "location": "Fulford", "quote": "the 60-space, drive-in campground" },
+      { "name": "Tsawout", "prototype": "Organization", "description": "A First Nation returning to and developing its ancestral Fulford lands.", "location": null, "quote": "To the Tsawout who are returning to their ancestral Fulford lands" },
+      { "name": "Leah Ostlund", "prototype": "Person", "description": "A Salt Spring resident who wrote a viewpoint expressing environmental concern about the campground.", "location": null, "quote": "By LEAH OSTLUND" },
+      { "name": "Garry oak", "prototype": "Natural feature", "description": "A native, endangered tree species Ostlund urges the project to protect.", "location": null, "quote": "native and endangered species, such as Garry oak trees." },
+      { "name": "Fulford", "prototype": "Place", "description": "A community at the south end of Salt Spring Island.", "location": "Fulford", "quote": "their ancestral land in Fulford" }
+    ],
+    "relations": [
+      { "from": "Tsawout", "predicate": "developing", "to": "Fulford campground development", "quote": "excitement for the Tsawout finally being able to more fully use their ancestral land" },
+      { "from": "Fulford campground development", "predicate": "located in", "to": "Fulford", "quote": "their ancestral land in Fulford" },
+      { "from": "Leah Ostlund", "predicate": "raises concerns about", "to": "Fulford campground development", "quote": "I felt the need to speak up for the wonderful natural world" },
+      { "from": "Fulford campground development", "predicate": "threatens", "to": "Garry oak", "quote": "especially when it comes to native and endangered species, such as Garry oak trees." }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/rainwater-harvesting-rebate-program-expands/", "title": "Rainwater harvesting rebate program expands", "date": "2026-07-29" },
+    "entities": [
+      { "name": "Rainwater Harvesting Rebate Program", "prototype": "Program", "description": "A rebate program helping residents install rainwater collection systems, expanded with new funding.", "location": null, "quote": "an expansion of funding for its rainwater harvesting rebate programs" },
+      { "name": "Transition Salt Spring", "prototype": "Organization", "description": "A community climate-resilience organization that runs the rebate program.", "location": null, "quote": "Transition Salt Spring has announced an expansion of funding" },
+      { "name": "Capital Regional District", "prototype": "Government body", "description": "The regional government providing increased funding for the rebate program.", "location": null, "quote": "increased funding support from the Capital Regional District (CRD)" },
+      { "name": "North Salt Spring Waterworks District", "prototype": "Government body", "description": "A local water district co-funding the rebate program and serving eligible customers.", "location": null, "quote": "the Capital Regional District (CRD) and the North Salt Spring Waterworks District" },
+      { "name": "Darlene Gage", "prototype": "Person", "description": "Executive director of Transition Salt Spring.", "location": null, "quote": "said Darlene Gage, executive director of Transition Salt Spring." },
+      { "name": "Southern Gulf Islands drought", "prototype": "Event", "description": "The ongoing summer drought pressuring island freshwater supplies.", "location": null, "quote": "Another summer of drought has arrived in the Southern Gulf Islands" },
+      { "name": "Salt Spring Island", "prototype": "Place", "description": "A Southern Gulf Island in British Columbia.", "location": "Salt Spring Island", "quote": "On Salt Spring Island, the program has previously been available" }
+    ],
+    "relations": [
+      { "from": "Transition Salt Spring", "predicate": "runs", "to": "Rainwater Harvesting Rebate Program", "quote": "Transition Salt Spring has announced an expansion of funding for its rainwater harvesting rebate programs" },
+      { "from": "Capital Regional District", "predicate": "funds", "to": "Rainwater Harvesting Rebate Program", "quote": "increased funding support from the Capital Regional District (CRD)" },
+      { "from": "North Salt Spring Waterworks District", "predicate": "funds", "to": "Rainwater Harvesting Rebate Program", "quote": "and the North Salt Spring Waterworks District, rebate amounts have increased" },
+      { "from": "Darlene Gage", "predicate": "directs", "to": "Transition Salt Spring", "quote": "Darlene Gage, executive director of Transition Salt Spring" },
+      { "from": "Rainwater Harvesting Rebate Program", "predicate": "responds to", "to": "Southern Gulf Islands drought", "quote": "As droughts become more frequent and severe, increasing our ability to capture and store rainwater" }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/editorial-ferry-promises/", "title": "Editorial: Ferry promises", "date": "2026-07-29" },
+    "entities": [
+      { "name": "BC Ferries", "prototype": "Business", "description": "The ferry operator planning two-ship service on the Vesuvius-Crofton route.", "location": null, "quote": "we hope BC Ferries takes care to solve it" },
+      { "name": "Route 6", "prototype": "Infrastructure", "description": "The Vesuvius Bay to Crofton ferry route serving Salt Spring.", "location": null, "quote": "Vesuvius Bay to Crofton route, aka Route 6" },
+      { "name": "Vesuvius Bay", "prototype": "Place", "description": "The Salt Spring terminal for the Crofton ferry route.", "location": "Vesuvius Bay", "quote": "traffic backups snarling Vesuvius" },
+      { "name": "Crofton", "prototype": "Place", "description": "The Vancouver Island terminus of Route 6, where both ferries are homeported.", "location": "Crofton", "quote": "homeport both ferries on the Crofton side" },
+      { "name": "Nicolas Jimenez", "prototype": "Person", "description": "BC Ferries CEO who made the case for homeporting both ferries at Crofton.", "location": null, "quote": "BC Ferries CEO Nicolas Jimenez sat at SIMS" },
+      { "name": "Island Class vessel", "prototype": "Vehicle", "description": "The smaller 47-vehicle ferries planned for two-ship service.", "location": null, "quote": "two planned Island Class vessels reportedly have space to hold 47 vehicles" },
+      { "name": "Quinsam", "prototype": "Vehicle", "description": "The existing 63-vehicle ferry the Island Class vessels would supplement or replace.", "location": null, "quote": "versus Quinsam's estimated 63" },
+      { "name": "Vesuvius Bay Road", "prototype": "Road", "description": "The road where ferry queues form during peak travel.", "location": "Vesuvius Bay Road", "quote": "vehicle queues on Vesuvius Bay Road during peak travel times" }
+    ],
+    "relations": [
+      { "from": "BC Ferries", "predicate": "operates", "to": "Route 6", "quote": "2027's planned two-ferry service for Salt Spring's Vesuvius Bay to Crofton route, aka Route 6" },
+      { "from": "Nicolas Jimenez", "predicate": "leads", "to": "BC Ferries", "quote": "BC Ferries CEO Nicolas Jimenez" },
+      { "from": "Route 6", "predicate": "connects", "to": "Crofton", "quote": "Vesuvius Bay to Crofton route" },
+      { "from": "Route 6", "predicate": "connects", "to": "Vesuvius Bay", "quote": "Vesuvius Bay to Crofton route" },
+      { "from": "Island Class vessel", "predicate": "replaces", "to": "Quinsam", "quote": "Island Class vessels reportedly have space to hold 47 vehicles versus Quinsam's estimated 63" },
+      { "from": "Route 6", "predicate": "queues onto", "to": "Vesuvius Bay Road", "quote": "99 per cent of sailings will no longer back onto Vesuvius Bay Road" }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/full-self-driving-mode-experience-shared/", "title": "Full Self Driving mode experience shared", "date": "2026-07-29" },
+    "entities": [
+      { "name": "Jim Standen", "prototype": "Person", "description": "Driftwood EV columnist testing autonomous driving on the island.", "location": null, "quote": "By JIM STANDEN DRIFTWOOD EV-OLUTION COLUMNIST" },
+      { "name": "Tesla", "prototype": "Business", "description": "The automaker whose Full Self Driving system Standen tests.", "location": null, "quote": "only Tesla has the technological lead" },
+      { "name": "Full Self Driving", "prototype": "Technology", "description": "Tesla's supervised autonomous driving system.", "location": null, "quote": "Its current version is called Supervised Full Self Driving (FSD)." },
+      { "name": "Waymo", "prototype": "Business", "description": "The dominant driverless taxi operator in the U.S.", "location": null, "quote": "with Waymo dominating the market." },
+      { "name": "Transport Canada", "prototype": "Government body", "description": "Federal agency whose collision statistics the column cites.", "location": null, "quote": "which accessed Transport Canada stats" },
+      { "name": "Gulf Islands Driftwood", "prototype": "Business", "description": "The Salt Spring Island newspaper.", "location": null, "quote": "In my April 15 Driftwood article" }
+    ],
+    "relations": [
+      { "from": "Jim Standen", "predicate": "writes for", "to": "Gulf Islands Driftwood", "quote": "DRIFTWOOD EV-OLUTION COLUMNIST" },
+      { "from": "Jim Standen", "predicate": "tests", "to": "Full Self Driving", "quote": "my on-island testing of autonomous driving" },
+      { "from": "Tesla", "predicate": "develops", "to": "Full Self Driving", "quote": "only Tesla has the technological lead with years of development" },
+      { "from": "Waymo", "predicate": "dominates", "to": "Full Self Driving", "quote": "with Waymo dominating the market" }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/nobody-asked-me-but-rolling-sliding-and-skipping-stones/", "title": "Nobody Asked Me But: Rolling, sliding and skipping stones", "date": "2026-07-29" },
+    "entities": [
+      { "name": "The Rolling Stones", "prototype": "Musical group", "description": "The veteran British rock band releasing the album Foreign Tongues in 2026.", "location": null, "quote": "this planet's most venerated rock band, the Rolling Stones" },
+      { "name": "Mick Jagger", "prototype": "Person", "description": "The Rolling Stones' 83-year-old lead singer.", "location": null, "quote": "lead singer and numero uno hip gyrator, just-turned 83-year-old ... Mick Jagger" },
+      { "name": "Keith Richards", "prototype": "Person", "description": "Lead guitarist and co-writer of the Rolling Stones.", "location": null, "quote": "there's lead guitarist and co-writer, Keith Richards" },
+      { "name": "Ronnie Wood", "prototype": "Person", "description": "Rolling Stones guitarist, at 79 the youngest member.", "location": null, "quote": "the sometimes bass guitar but more often second lead guitar roles fell to Ronnie Wood" },
+      { "name": "Foreign Tongues", "prototype": "Creative work", "description": "The Rolling Stones' 2026 album.", "location": null, "quote": "the release of what seems to be their one billionth record, Foreign Tongues" },
+      { "name": "Shilo Zylbergold", "prototype": "Person", "description": "The Driftwood opinion columnist writing the humorous piece.", "location": null, "quote": "By Shilo Zylbergold" }
+    ],
+    "relations": [
+      { "from": "Mick Jagger", "predicate": "sings for", "to": "The Rolling Stones", "quote": "lead singer ... Mick Jagger" },
+      { "from": "Keith Richards", "predicate": "plays guitar for", "to": "The Rolling Stones", "quote": "lead guitarist and co-writer, Keith Richards" },
+      { "from": "Ronnie Wood", "predicate": "plays guitar for", "to": "The Rolling Stones", "quote": "roles fell to Ronnie Wood" },
+      { "from": "The Rolling Stones", "predicate": "released", "to": "Foreign Tongues", "quote": "the release of ... Foreign Tongues" }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/fire-trustees-surprised-by-fulford-pickleball-project/", "title": "Fire trustees surprised by Fulford pickleball project", "date": "2026-07-29" },
+    "entities": [
+      { "name": "Fulford Pickleball Court Project", "prototype": "Project", "description": "A proposed project for up to eight pickleball courts near Fulford on fire-district land.", "location": "Burgoyne Valley", "quote": "a project charter that envisions as many as eight new courts in the bucolic Burgoyne Valley near Fulford" },
+      { "name": "Local Community Commission", "prototype": "Government body", "description": "The Salt Spring commission (LCC) that approved the pickleball project charter.", "location": null, "quote": "the Local Community Commission's (LCC) unanimous motion last month approving a project charter" },
+      { "name": "Salt Spring Island Fire Protection District", "prototype": "Government body", "description": "The fire district (SSIFPD) that owns the proposed site and was surprised by the plan.", "location": null, "quote": "Trustees for the Salt Spring Island Fire Protection District (SSIFPD) seemed mostly surprised" },
+      { "name": "Fire Hall No. 2", "prototype": "Infrastructure", "description": "The Fulford fire hall adjacent to the proposed pickleball site.", "location": "Fire Hall No. 2", "quote": "on district-owned land adjacent to Fire Hall No. 2" },
+      { "name": "Rollie Cook", "prototype": "Person", "description": "SSIFPD board chair who fielded complaints about pickleball at the site.", "location": null, "quote": "SSIFPD board chair Rollie Cook said he had fielded phone calls" },
+      { "name": "Jamie Holmes", "prototype": "Person", "description": "Fire Chief who said pickleball and firefighter housing uses are incompatible.", "location": null, "quote": "Fire Chief Jamie Holmes indicated the two uses would likely be incompatible" },
+      { "name": "Brad Hefferon", "prototype": "Person", "description": "Adjacent property owner who says the proposal cost his family a farm sale.", "location": null, "quote": "Immediately-adjacent property owner Brad Hefferon" },
+      { "name": "Gary Holman", "prototype": "Person", "description": "Salt Spring CRD director who noted public engagement was still forthcoming.", "location": null, "quote": "Salt Spring Capital Regional District director Gary Holman noted in a Facebook post" },
+      { "name": "Ben Corno", "prototype": "Person", "description": "LCC member who said commissioners first saw the proposal on June 18.", "location": null, "quote": "LCC member Ben Corno posted that commissioners had only seen the proposal for the first time" },
+      { "name": "Islands Trust", "prototype": "Government body", "description": "The land-use authority through which a rezoning would proceed.", "location": null, "quote": "a rezoning process through the Islands Trust" },
+      { "name": "Agricultural Land Reserve", "prototype": "Land designation", "description": "The protected agricultural designation the proposed site lies within.", "location": null, "quote": "the proposed site lies within the Agricultural Land Reserve" },
+      { "name": "Capital Regional District", "prototype": "Government body", "description": "The regional government; its Salt Spring director commented on the project.", "location": null, "quote": "Salt Spring Capital Regional District director Gary Holman" },
+      { "name": "Rainbow Road", "prototype": "Place", "description": "The recreation area to which pickleball was conceptually shifted from Portlock Park.", "location": "Rainbow Road", "quote": "conceptually shifted pickleball from Portlock Park to Rainbow Road." },
+      { "name": "Portlock Park", "prototype": "Place", "description": "The park from which pickleball was conceptually moved.", "location": "Portlock Park", "quote": "shifted pickleball from Portlock Park to Rainbow Road" }
+    ],
+    "relations": [
+      { "from": "Local Community Commission", "predicate": "approved", "to": "Fulford Pickleball Court Project", "quote": "the Local Community Commission's (LCC) unanimous motion last month approving a project charter" },
+      { "from": "Fulford Pickleball Court Project", "predicate": "sited on land of", "to": "Salt Spring Island Fire Protection District", "quote": "on district-owned land adjacent to Fire Hall No. 2" },
+      { "from": "Fulford Pickleball Court Project", "predicate": "adjacent to", "to": "Fire Hall No. 2", "quote": "land adjacent to Fire Hall No. 2" },
+      { "from": "Rollie Cook", "predicate": "chairs", "to": "Salt Spring Island Fire Protection District", "quote": "SSIFPD board chair Rollie Cook" },
+      { "from": "Jamie Holmes", "predicate": "serves as fire chief of", "to": "Salt Spring Island Fire Protection District", "quote": "Fire Chief Jamie Holmes" },
+      { "from": "Gary Holman", "predicate": "directs", "to": "Capital Regional District", "quote": "Salt Spring Capital Regional District director Gary Holman" },
+      { "from": "Ben Corno", "predicate": "serves on", "to": "Local Community Commission", "quote": "LCC member Ben Corno" },
+      { "from": "Brad Hefferon", "predicate": "opposes", "to": "Fulford Pickleball Court Project", "quote": "A concept with no approvals of any kind has cost a neighbouring farm family its sale." },
+      { "from": "Fulford Pickleball Court Project", "predicate": "lies within", "to": "Agricultural Land Reserve", "quote": "the proposed site lies within the Agricultural Land Reserve" },
+      { "from": "Fulford Pickleball Court Project", "predicate": "requires rezoning through", "to": "Islands Trust", "quote": "a rezoning process through the Islands Trust" }
+    ]
+  },
+  {
+    "source": { "url": "https://gulfislandsdriftwood.com/long-awaited-road-repairs-underway/", "title": "Long-awaited road repairs underway", "date": "2026-07-28" },
+    "entities": [
+      { "name": "Broadwell Road", "prototype": "Road", "description": "A Salt Spring road closed since December 2025, receiving a culvert replacement at its Duck Creek crossing.", "location": "Broadwell Road", "quote": "Broadwell Road has been closed to traffic since December 2025" },
+      { "name": "Sunset Drive", "prototype": "Road", "description": "A road reduced to single-lane after a culvert failure at its Duck Creek crossing.", "location": "Sunset Drive", "quote": "the washed-out side of Sunset Drive at its lowest point next to Duck Creek Park" },
+      { "name": "Blackburn Road", "prototype": "Road", "description": "A road near Sunrise Place where a failing culvert is being replaced with a larger one.", "location": "Blackburn Road", "quote": "crews had already begun work at Blackburn Road near Sunrise Place" },
+      { "name": "Duck Creek", "prototype": "Natural feature", "description": "A fish-bearing watercourse whose summer work window dictates the repair timing.", "location": "Duck Creek", "quote": "Fish exclusion dams were installed in Duck Creek on both sides of Broadwell Road" },
+      { "name": "Ministry of Transportation and Transit", "prototype": "Government body", "description": "The provincial ministry overseeing the culvert replacement projects.", "location": null, "quote": "Ministry of Transportation and Transit roads area manager Owen Page" },
+      { "name": "Owen Page", "prototype": "Person", "description": "Roads area manager for the Ministry of Transportation and Transit.", "location": null, "quote": "roads area manager Owen Page said" },
+      { "name": "North Salt Spring Waterworks District", "prototype": "Government body", "description": "The water district that installed new valves on a critical Broadwell Road water line.", "location": null, "quote": "The North Salt Spring Waterworks District were completing that work" },
+      { "name": "Emcon Services", "prototype": "Business", "description": "The road maintenance contractor working on Blackburn Road.", "location": null, "quote": "Emcon Services' South Island operations manager Andrew Gaetz" },
+      { "name": "Andrew Gaetz", "prototype": "Person", "description": "Emcon Services' South Island operations manager.", "location": null, "quote": "Emcon Services' South Island operations manager Andrew Gaetz confirmed" },
+      { "name": "Salmon", "prototype": "Natural feature", "description": "The local salmon population the work windows are timed to protect.", "location": null, "quote": "a time when the local salmon population wouldn't be disrupted" },
+      { "name": "Cranberry Road", "prototype": "Road", "description": "The long-way-around detour used during the Blackburn Road closure.", "location": "Cranberry Road", "quote": "the long way around — i.e., via Cranberry Road." }
+    ],
+    "relations": [
+      { "from": "Ministry of Transportation and Transit", "predicate": "repairs", "to": "Broadwell Road", "quote": "Salt Spring's Broadwell Road, Sunset Drive and Blackburn Road are receiving back-to-back culvert replacements" },
+      { "from": "Owen Page", "predicate": "manages roads for", "to": "Ministry of Transportation and Transit", "quote": "Ministry of Transportation and Transit roads area manager Owen Page" },
+      { "from": "Broadwell Road", "predicate": "crosses", "to": "Duck Creek", "quote": "Fish exclusion dams were installed in Duck Creek on both sides of Broadwell Road" },
+      { "from": "North Salt Spring Waterworks District", "predicate": "installed valves on", "to": "Broadwell Road", "quote": "a critical water line on Broadwell Road needed new valves installed" },
+      { "from": "Emcon Services", "predicate": "repairs", "to": "Blackburn Road", "quote": "crews had already begun work at Blackburn Road" },
+      { "from": "Andrew Gaetz", "predicate": "manages operations for", "to": "Emcon Services", "quote": "Emcon Services' South Island operations manager Andrew Gaetz" },
+      { "from": "Broadwell Road", "predicate": "serves as detour for", "to": "Sunset Drive", "quote": "the by-then-reopened Broadwell Road will serve as the designated construction detour route" },
+      { "from": "Duck Creek", "predicate": "habitat for", "to": "Salmon", "quote": "in-stream works within fish-bearing watercourses occur only during specified summer work windows to minimize impacts on fish" }
+    ]
+  }
+]
