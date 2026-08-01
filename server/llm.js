@@ -6,7 +6,7 @@ import Anthropic from '@anthropic-ai/sdk'
 const OLLAMA = process.env.OLLAMA_URL || 'http://localhost:11434'
 const GEN_MODEL = process.env.OLLAMA_MODEL || 'gpt-oss:120b'
 const EMBED_MODEL = process.env.EMBED_MODEL || 'nomic-embed-text'
-const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL || 'claude-opus-4-8'
+const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL || 'claude-fable-5'
 
 let anthropic = process.env.ANTHROPIC_API_KEY ? new Anthropic() : null
 export const providerName = anthropic ? `anthropic:${ANTHROPIC_MODEL}` : `ollama:${GEN_MODEL}`
@@ -15,12 +15,26 @@ export const providerName = anthropic ? `anthropic:${ANTHROPIC_MODEL}` : `ollama
 export async function generateJSON({ system, user, maxTokens = 4000 }) {
   let text
   if (anthropic) {
-    const r = await anthropic.messages.create({
-      model: ANTHROPIC_MODEL,
-      max_tokens: maxTokens,
-      system,
-      messages: [{ role: 'user', content: user }],
-    })
+    // Fable 5: thinking is always on (omit the param); safety classifiers can
+    // decline with stop_reason 'refusal', so opt into the server-side
+    // fallback to Opus so an extraction chore never silently dies.
+    const isFable = ANTHROPIC_MODEL.startsWith('claude-fable')
+    const r = await (isFable
+      ? anthropic.beta.messages.create({
+          model: ANTHROPIC_MODEL,
+          max_tokens: maxTokens,
+          betas: ['server-side-fallback-2026-06-01'],
+          fallbacks: [{ model: 'claude-opus-4-8' }],
+          system,
+          messages: [{ role: 'user', content: user }],
+        })
+      : anthropic.messages.create({
+          model: ANTHROPIC_MODEL,
+          max_tokens: maxTokens,
+          system,
+          messages: [{ role: 'user', content: user }],
+        }))
+    if (r.stop_reason === 'refusal') throw new Error('model declined the request')
     text = r.content.filter((b) => b.type === 'text').map((b) => b.text).join('')
   } else {
     const res = await fetch(`${OLLAMA}/api/chat`, {
