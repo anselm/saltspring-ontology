@@ -132,37 +132,95 @@
     })
   })
 
-  // drag
+  // Unified pointer interaction: drag a node, pan the background, pinch to
+  // zoom (two fingers), wheel to zoom. Works with mouse and touch alike.
+  const pointers = new Map() // pointerId -> {x, y}
   let dragging = null
-  function down(n, e) {
-    dragging = n
-    n.fx = n.x
-    n.fy = n.y
-    sim.alphaTarget(0.2).restart()
-    e.stopPropagation()
-  }
-  function move(e) {
-    if (!dragging) return
-    const pt = toLocal(e)
-    dragging.fx = pt.x
-    dragging.fy = pt.y
-  }
-  function up() {
-    if (dragging) { dragging.fx = null; dragging.fy = null }
-    dragging = null
-    sim?.alphaTarget(0)
-  }
+  let panning = null // { sx, sy, tx, ty }
+  let pinch = null // { d0, k0, x0, y0, cx, cy }
+  let movedFar = false // suppress click-select after a drag/pan
+
+  const clampK = (k) => Math.min(3, Math.max(0.35, k))
+
   function toLocal(e) {
     const r = svgEl.getBoundingClientRect()
     return { x: (e.clientX - r.left - transform.x) / transform.k, y: (e.clientY - r.top - transform.y) / transform.k }
   }
 
-  // simple wheel zoom
+  function downNode(n, e) {
+    if (pointers.size > 0) return // a second finger means pinch, not a node drag
+    e.stopPropagation()
+    svgEl.setPointerCapture?.(e.pointerId)
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+    movedFar = false
+    dragging = n
+    n.fx = n.x
+    n.fy = n.y
+    sim?.alphaTarget(0.25).restart()
+  }
+
+  function downBg(e) {
+    svgEl.setPointerCapture?.(e.pointerId)
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+    movedFar = false
+    if (pointers.size === 2) {
+      const [a, b] = [...pointers.values()]
+      if (dragging) { dragging.fx = null; dragging.fy = null; dragging = null; sim?.alphaTarget(0) }
+      panning = null
+      pinch = { d0: Math.hypot(a.x - b.x, a.y - b.y) || 1, k0: transform.k, x0: transform.x, y0: transform.y, cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2 }
+    } else if (!dragging) {
+      panning = { sx: e.clientX, sy: e.clientY, tx: transform.x, ty: transform.y }
+    }
+  }
+
+  function movePtr(e) {
+    if (pointers.has(e.pointerId)) pointers.set(e.pointerId, { x: e.clientX, y: e.clientY })
+    if (pinch && pointers.size >= 2) {
+      const [a, b] = [...pointers.values()]
+      const d = Math.hypot(a.x - b.x, a.y - b.y) || 1
+      const k = clampK((pinch.k0 * d) / pinch.d0)
+      const r = svgEl.getBoundingClientRect()
+      const mx = pinch.cx - r.left, my = pinch.cy - r.top
+      transform = { k, x: mx - (mx - pinch.x0) * (k / pinch.k0), y: my - (my - pinch.y0) * (k / pinch.k0) }
+      movedFar = true
+      return
+    }
+    if (dragging) {
+      const pt = toLocal(e)
+      dragging.fx = pt.x
+      dragging.fy = pt.y
+      movedFar = true
+      return
+    }
+    if (panning) {
+      const dx = e.clientX - panning.sx, dy = e.clientY - panning.sy
+      if (Math.abs(dx) + Math.abs(dy) > 4) movedFar = true
+      transform = { k: transform.k, x: panning.tx + dx, y: panning.ty + dy }
+    }
+  }
+
+  function upPtr(e) {
+    pointers.delete(e.pointerId)
+    if (pointers.size < 2) pinch = null
+    if (dragging && pointers.size === 0) {
+      dragging.fx = null
+      dragging.fy = null
+      dragging = null
+      sim?.alphaTarget(0)
+    }
+    if (pointers.size === 0) panning = null
+  }
+
+  function clickNode(payload) {
+    if (movedFar) return // that was a drag, not a tap
+    onSelect(payload)
+  }
+
   function wheel(e) {
     e.preventDefault()
     const r = svgEl.getBoundingClientRect()
     const mx = e.clientX - r.left, my = e.clientY - r.top
-    const k = Math.min(3, Math.max(0.4, transform.k * (e.deltaY < 0 ? 1.1 : 0.9)))
+    const k = clampK(transform.k * (e.deltaY < 0 ? 1.1 : 0.9))
     transform = { k, x: mx - (mx - transform.x) * (k / transform.k), y: my - (my - transform.y) * (k / transform.k) }
   }
 
@@ -173,10 +231,11 @@
 <div class="relative h-full w-full overflow-hidden bg-ink-950">
   <svg
     bind:this={svgEl}
-    class="h-full w-full touch-none"
-    onmousemove={move}
-    onmouseup={up}
-    onmouseleave={up}
+    class="h-full w-full cursor-grab touch-none active:cursor-grabbing"
+    onpointerdown={downBg}
+    onpointermove={movePtr}
+    onpointerup={upPtr}
+    onpointercancel={upPtr}
     onwheel={wheel}
     role="presentation"
   >
@@ -205,15 +264,15 @@
       {#each nodes as n (n.id)}
         {#if n.kind === 'prototype'}
           <g transform="translate({n.x},{n.y})" class="cursor-pointer"
-            onmousedown={(e) => down(n, e)}
-            onclick={() => onSelect({ id: n.id, kind: 'prototype', name: n.name })} role="presentation">
+            onpointerdown={(e) => downNode(n, e)}
+            onclick={() => clickNode({ id: n.id, kind: 'prototype', name: n.name })} role="presentation">
             <circle r={n.r} fill={col(n.name)} fill-opacity="0.14" stroke={col(n.name)} stroke-width="1.5" stroke-dasharray="4 3" />
             <text y="4" fill={col(n.name)} font-size="12" font-weight="700" text-anchor="middle" class="select-none pointer-events-none">{n.name}</text>
           </g>
         {:else}
           <g transform="translate({n.x},{n.y})" class="cursor-pointer"
-            onmousedown={(e) => down(n, e)}
-            onclick={() => onSelect(n.raw)} role="presentation">
+            onpointerdown={(e) => downNode(n, e)}
+            onclick={() => clickNode(n.raw)} role="presentation">
             <circle r={n.r} fill={col(n.proto)} fill-opacity={isSel(n.id) ? 1 : 0.85}
               stroke={isSel(n.id) ? '#fff' : '#0b0f14'} stroke-width={isSel(n.id) ? 2 : 1} />
             {#if n.r > 8 || isSel(n.id)}
@@ -226,7 +285,7 @@
     </g>
   </svg>
 
-  <div class="pointer-events-none absolute bottom-2 left-3 text-[11px] text-ink-400">
-    drag nodes · scroll to zoom · dashed = <span class="text-ink-300">is-a</span> · solid = relation
+  <div class="pointer-events-none absolute bottom-2 left-3 hidden text-[11px] text-ink-400 sm:block">
+    drag background to pan · drag nodes · scroll/pinch to zoom · dashed = <span class="text-ink-300">is-a</span> · solid = relation
   </div>
 </div>

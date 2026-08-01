@@ -13,6 +13,8 @@
   let selected = $state(null)
   let filterProto = $state(null)
   let showAbout = $state(params.has('about'))
+  // side panel: open on desktop, tucked away on phones (the graph needs the room)
+  let panelOpen = $state(typeof matchMedia !== 'undefined' ? matchMedia('(min-width: 768px)').matches : true)
 
   fetch('data/graph.json')
     .then((r) => r.json())
@@ -28,6 +30,7 @@
       return
     }
     selected = n
+    if (n) panelOpen = true // detail lives in the panel — surface it on tap
   }
   const fmtWhen = (iso) => (iso ? new Date(iso).toLocaleString('en-CA', { dateStyle: 'medium', timeStyle: 'short' }) : '')
 </script>
@@ -55,14 +58,24 @@
         <button onclick={() => (view = 'graph')} class={view === 'graph' ? 'rounded bg-ink-700 px-3 py-1 text-ink-100' : 'px-3 py-1 text-ink-400'}>Graph</button>
         <button onclick={() => (view = 'map')} class={view === 'map' ? 'rounded bg-ink-700 px-3 py-1 text-ink-100' : 'px-3 py-1 text-ink-400'}>Map</button>
       </div>
-      <button onclick={() => (showAbout = true)} class="rounded-md border border-ink-700 px-3 py-1.5 text-xs hover:bg-ink-800">About</button>
+      <button onclick={() => (showAbout = true)} class="hidden rounded-md border border-ink-700 px-3 py-1.5 text-xs hover:bg-ink-800 sm:block">About</button>
+      <button
+        onclick={() => (panelOpen = !panelOpen)}
+        class="rounded-md border px-2.5 py-1.5 text-xs {panelOpen ? 'border-accent-500/50 text-accent-400' : 'border-ink-700 text-ink-300 hover:bg-ink-800'}"
+        aria-label="Toggle panel"
+        title="Toggle the browse panel"
+      >
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" d="M4 6h16M4 12h10M4 18h7" />
+        </svg>
+      </button>
     </div>
   </header>
 
   {#if !graph}
     <div class="grid flex-1 place-items-center text-sm text-ink-400">Loading graph…</div>
   {:else}
-    <main class="flex min-h-0 flex-1">
+    <main class="relative flex min-h-0 flex-1">
       <div class="min-w-0 flex-1">
         {#if view === 'graph'}
           <GraphView {graph} {palette} {selected} {filterProto} onSelect={select} />
@@ -71,13 +84,23 @@
         {/if}
       </div>
 
-      <aside class="flex w-80 shrink-0 flex-col border-l border-ink-800 bg-ink-900">
-        {#if selected}
-          <DetailPanel entity={selected} {graph} {palette} onSelect={select} onClose={() => (selected = null)} />
-        {:else}
-          <Enumerations {graph} {palette} {filterProto} onFilter={(p) => (filterProto = p)} onSelect={select} {selected} />
-        {/if}
-      </aside>
+      {#if panelOpen}
+        <aside
+          class="absolute inset-y-0 right-0 z-30 flex w-80 max-w-[88vw] shrink-0 flex-col border-l border-ink-800 bg-ink-900 shadow-2xl md:static md:z-auto md:shadow-none"
+        >
+          <button
+            onclick={() => (panelOpen = false)}
+            class="flex items-center justify-center gap-1 border-b border-ink-800 py-1.5 text-[11px] text-ink-400 hover:text-ink-200 md:hidden"
+          >
+            hide panel ▸
+          </button>
+          {#if selected}
+            <DetailPanel entity={selected} {graph} {palette} onSelect={select} onClose={() => (selected = null)} />
+          {:else}
+            <Enumerations {graph} {palette} {filterProto} onFilter={(p) => (filterProto = p)} onSelect={select} {selected} />
+          {/if}
+        </aside>
+      {/if}
     </main>
 
     <footer class="border-t border-ink-800 bg-ink-900 px-4 py-1.5 text-[11px] text-ink-500">
