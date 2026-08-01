@@ -9,7 +9,7 @@
 # previous oneshot run finishes (OnUnitInactiveSec).
 set -euo pipefail
 
-REPO_URL="git@github.com:orbitalfoundation/ontology.git"
+REPO_URL="git@github.com:orbitalfoundation/saltspring-ontology.git"
 BRANCH="main"
 BASE="/srv/autodeploy"
 REPO="$BASE/repo"
