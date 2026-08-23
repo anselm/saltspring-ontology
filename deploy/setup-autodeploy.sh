@@ -15,7 +15,7 @@ VM="${1:-${VM:-ontology}}"
 HOST="$VM.exe.xyz"
 DEST="exedev@$HOST"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-GHREPO="orbitalfoundation/saltspring-ontology"
+GHREPO="anselm/saltspring-ontology"
 SSH_OPTS=(-o StrictHostKeyChecking=accept-new -o UserKnownHostsFile=/dev/null -o LogLevel=ERROR -o ServerAliveInterval=5 -o ServerAliveCountMax=3)
 SSH() { ssh "${SSH_OPTS[@]}" "$DEST" "$@"; }
 
