@@ -1,0 +1,7 @@
+name = "saltspring-ontology"
+horizon = "2026"
+repo = "anselm/saltspring-ontology"
+code = "local"
+deploy = "exe:ssontology"
+autodeploy = true
+notes = "unit ontology-autodeploy"
